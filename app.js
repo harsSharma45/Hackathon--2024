@@ -131,4 +131,4 @@ function sortTasks() {
 }
 
 // Event listener for the dropdown menu
-document.getElementById('sort-dropdown').addEventListener('change', 
+document.getElementById('sort-dropdown').addEventListener('change', sortTasks);
