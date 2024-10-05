@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Hackathon To-Do List</h1>
+    <p>Manage tasks collaboratively for the hackathon.</p>
+
+  <h1>To-Do List</h1>
+  
+  </header>
+
+  <section id="todo-section">
+    <form id="todo-form">
+      <input type="text" id="contributor-name" placeholder="Your Name" required>
+      <input type="text" id="task-content" placeholder="Task description..." required>
+    
+      <select id="priority" name="priority" required>
+        <option value="" disabled selected hidden>Priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <label for="deadline">Deadline (optional):</label>
+      <input type="date" id="deadline" name="deadline">
+
+      <button type="submit">Add Task</button>
+    </form>
+    
+    <section id="sort-section">
+    <select id="sort-dropdown">
+      <option value="" disabled selected hidden>Sort Tasks</option>
+      <option value="priority">Sort by Priority</option>
+      <option value="time-newest">Sort by Time (Newest First)</option>
+      <option value="time-oldest">Sort by Time (Oldest First)</option>
+    </select>
+    </section>
+
+    <br>
+
+    <div id="tasks-container">
+      <!-- Tasks will appear here dynamically -->
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

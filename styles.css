@@ -1,3 +1,4 @@
+/* light mode */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -19,19 +20,47 @@ body {
   #todo-section {
     padding: 20px;
   }
-/*   
-  #todo-form {
+  #priority {
+    padding: 10px;
+  }
+
+  /*#todo-form {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-  } */
+  }*/
   
   #contributor-name, #task-content {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    height: 20px;
   }
+
+#deadline {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  height: 20px;
+}
+
+#sort-dropdown, #priority {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #858585;
+  background-color: white;
+  height: 20px;
+}
+
+
+.task:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
   
   button {
     background-color: #4CAF50;
@@ -41,7 +70,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
   button:hover {
     background-color: #45a049;
   }
@@ -97,4 +126,3 @@ body {
     text-decoration: line-through;
     color: gray;
   }
-  
